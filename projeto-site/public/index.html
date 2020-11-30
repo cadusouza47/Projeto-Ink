@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="funcoes.js"></script>
+    <title>Projeto Individual - Ink</title>
+</head>
+
+<body>
+    <!-- --------------Início------------- -->
+    <div id="header">
+        <div class="opcimg">
+            <div id="menu">
+                <container class="navbar">
+                    <a href="index.html">
+                        <img class="img-logo" src="images/logo.png"></a>
+                    <!-- imagem do logo *menu*-->
+                    <ul class="ul1">
+                        <li> <a class="listamenu" href="#sobre">SOBRE</a></li>
+                        <li> <a class="listamenu" href="#descubra">DESCUBRA</a> </li>
+                        <li> <a class="listamenu" href="#locais_dor">LOCAIS DE DOR</a></li>
+                        <li> <a class="listamenu" href="#galeria">GALERIA</a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <a href="login.html">
+                            <li class="limargem"><img class="usericon" src="images/user.png"></li>
+                        </a>
+                    </ul>
+                </container>
+            </div>
+        </div>
+    </div>
+    <!----------- Slideshow container ---------- -->
+    <div class="slideshow-pai">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="images/carrossel2.jpg" style="width: 1349px; height: 600px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/carrossel1.jpg" style="width:1349px; height: 600px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/carrossel3.jpg" style="width:1349px; height: 600px;">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- -----------Sobre Mim------------- -->
+    <div id="sobre">
+        <div class="container">
+            <br>
+            <center>
+                <h1>SOBRE MIM</h1>
+            </center>
+            <br><br>
+            <div id="group-sobre">
+                <div class="icons-sobre">
+                    <br><br>
+                    <img src="images/sobre1.png">
+                    <br><br>
+                    <h2>COMEÇO</h2>
+                    <br>
+                    <p>Tudo começou com a primeira tatuagem, nos meus 17 anos tive a oportunidade de fazer e com isso
+                        adquiri um amor gigante por tatuagem e desde então faço questão de levar os desenhos em minha
+                        pele para a vida, no começo eu me preocupava em como isso iria impactar em minha vida no futuro,
+                        e realmente impactou, mas eu aprendi a aceitar isso como algo meu com confiança, no final das
+                        contas, isso é uma forma de arte.</p>
+                </div>
+                <div class="icons-sobre">
+                    <br><br>
+                    <img src="images/sobre2.png">
+                    <br><br>
+                    <h2>ATUALMENTE</h2>
+                    <br>
+                    <p>Na faculdade, a questão da tatuagem me preocupou em como as pessoas me veriam em aspectos
+                        profissionais. Atualmente, percebi que sendo uma característica minha, eu deveria me aceitar e
+                        ter confiança em meus conhecimentos e não me importar em como me veriam, pois o que consideram é
+                        a experiência e não o físico.</p>
+                </div>
+                <div class="icons-sobre">
+                    <br><br>
+                    <img src="images/sobre3.png">
+                    <br><br>
+                    <h2>FUTURO</h2>
+                    <br>
+                    <p>Comigo tendo trabalhado melhor meu autodesenvolvimento, minhas expectativas para o
+                        futuro é de que eu chegue no mercado de trabalho preparado, e também me tornando a
+                        pessoa que eu sei que vão poder contar quando surgir um problema, e esse projeto
+                        tem como base isso, mostrar que você não precisa deixar de ser você mesmo para te verem como um
+                        profissional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Descubra------------- -->
+    <div id="descubra">
+        <div class="colunas">
+            <h1>DESCUBRA SEU ESTILO</h1>
+            <!-- Início Pergunta 1 -->
+            <div class="perguntas">
+                <h3> Qual é o seu estilo? </h3>
+                <input id="cb_pri" name="cb" type="checkbox"> <label for="in_pri">Moderno</label> <br> <br>
+                <input id="cb_seg" name="cb" type="checkbox"> <label for="in_seg">Antiquado</label> <br> <br>
+                <input id="cb_ter" name="cb" type="checkbox"> <label for="in_ter">Alternativo</label> <br> <br>
+            </div>
+            <!-- Fim Pergunta 1 -->
+            <!-- Início Pergunta 2 -->
+            <div class="perguntas">
+                <h3> Prefere que tipo de desenho? </h3>
+                <input id="cb_pri2" name="cb" type="checkbox"> <label for="in_pri2">tradicional</label> <br> <br>
+                <input id="cb_seg2" name="cb" type="checkbox"> <label for="in_seg2">Realista</label> <br> <br>
+                <input id="cb_ter2" name="cb" type="checkbox"> <label for="in_ter2">Minimalista</label> <br> <br>
+                <input id="cb_quar2" name="cb" type="checkbox"> <label for="in_quar2">Black</label> <br> <br>
+            </div>
+            <!-- Fim Pergunta 2 -->
+            <!-- Início Pergunta 3 -->
+            <div class="perguntas">
+                <h3> Prefere desenhos coloridos ou preto e branco? </h3>
+                <input id="cb_pri3" name="cb" type="checkbox"> <label for="in_pri3">Coloridos</label> <br> <br>
+                <input id="cb_seg3" name="cb" type="checkbox"> <label for="in_seg3">Preto e branco</label> <br> <br>
+            </div>
+            <!-- Fim Pergunta 4 -->
+        </div>
+        <br>
+        <button onclick="descobrir()"
+            style="margin-left: 596px; font-size: 18px; font-family: 'Rye', cursive; background-color: white; border-radius: 5px;">Descobrir
+            Estilo</button>
+        <br><br>
+        <div id="div_resposta"
+            style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"></div>
+        <br><br>
+        <div id="div_estilos" style="display: none;"></div>
+    </div>
+
+    <!-- -----------Locais de dor------------- -->
+    <br><br><br><br>
+    <div id="locais_dor">
+        <div class="locais_dor">
+            <br>
+            <h1>LOCAIS DE DOR</h1>
+            <p>Selecione uma região do corpo:</p>
+            <select id="regiao" name="" onchange="dor()">
+                <option value="Selecione uma região">-Selecione-</option>
+                <option value="rosto">Rosto</option>
+                <option value="braco">Braço</option>
+                <option value="mao">Mão</option>
+                <option value="dedo">Dedo</option>
+                <option value="cotovelo">Cotovelo</option>
+                <option value="costas">Costas</option>
+                <option value="peito">Peito</option>
+                <option value="cocha">Cocha</option>
+                <option value="canela">Canela</option>
+                <option value="panturrilha">Panturrilha</option>
+                <option value="tornozelo">Tornozelo</option>
+                <option value="pe">Pé</option>
+                <option value="costela">Costela</option>
+                <option value="pescoco">Pescoço</option>
+            </select>
+            <br><br>
+            <div id="div_mensagem"
+                style="display: block; color: white; font-family: 'Roboto', sans-serif; text-align: center;">
+            </div>
+            <br><br>
+            <div id="div_barra"></div>
+        </div>
+    </div>
+    <!-- -----------Galeria------------- -->
+    <div id="galeria">
+        <br>
+        <h1>GALERIA</h1>
+        <div class="imagens_alinhadas">
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo1.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo2.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo3.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo4.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo5.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo6.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo7.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo8.jpeg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img_edit">
+                    <img src="images/tattoo9.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Rodapé------------- -->
+    <div class="rodape">
+        <div class="titulo_rod">
+            <h1>Vamos tatuar?</h1>
+            <p>Feito por Carlos Eduardo Batista de Souza - Bandtec ©</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function dor() {
+        var escolha_local = document.getElementById('regiao');
+        var local_dor = escolha_local.options[escolha_local.selectedIndex].value;
+
+        if (local_dor == 'rosto') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'braco') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor leve!`;
+            div_barra.style = `height: 50px; width: 300px; background-color: #2CABF3;`;
+        }
+
+        else if (local_dor == 'dedo') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'mao') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor média!`;
+            div_barra.style = `height: 50px; width: 700px; background-color: #41E25E;`;
+        }
+
+        else if (local_dor == 'cotovelo') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'costas') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor média!`;
+            div_barra.style = `height: 50px; width: 700px; background-color: #41E25E;`;
+        }
+
+        else if (local_dor == 'peito') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'cocha') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor leve!`;
+            div_barra.style = `height: 50px; width: 300px; background-color: #2CABF3;`;
+        }
+
+        else if (local_dor == 'canela') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor média!`;
+            div_barra.style = `height: 50px; width: 700px; background-color: #41E25E;`;
+        }
+
+        else if (local_dor == 'panturrilha') {
+            div_mensagem.innerHTML = `Você escolheu uma região de dor leve!`;
+            div_barra.style = `height: 50px; width: 300px; background-color: #2CABF3;`;
+        }
+
+        else if (local_dor == 'tornozelo') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'pe') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'costela') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+
+        else if (local_dor == 'pescoco') {
+            div_mensagem.innerHTML = `Você escolheu uma região dolorida!`;
+            div_barra.style = `height: 50px; width: 1000px; background-color: #e02727;`;
+        }
+    }
+
+    function descobrir() {
+        var cb_pri = document.getElementById("cb_pri");
+        var cb_seg = document.getElementById("cb_seg");
+        var cb_ter = document.getElementById("cb_ter");
+        var cb_pri2 = document.getElementById("cb_pri2");
+        var cb_seg2 = document.getElementById("cb_seg2");
+        var cb_ter2 = document.getElementById("cb_ter2");
+        var cb_quar2 = document.getElementById("cb_quar2");
+        var cb_pri3 = document.getElementById("cb_pri3");
+        var cb_seg3 = document.getElementById("cb_seg3");
+
+        if (cb_pri.checked == true && cb_pri2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é New School!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_pri2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_seg2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Aquarela!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_seg2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Realismo!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_ter2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Minimalista!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_ter2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Geométrico!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_quar2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_pri.checked == true && cb_quar2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_pri2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Old School!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_pri2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_seg2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Neo Tradicional!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_seg2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Glitch`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_ter2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é New School!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_ter2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Single Line!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_quar2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_seg.checked == true && cb_quar2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_pri2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Psicodélico!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_pri2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Blackwork!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_seg2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Aquarela!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_seg2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Glitch!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_ter2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Tinta Vermelha!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_ter2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Geométrico!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_quar2.checked == true && cb_pri3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Oriental!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+        else if (cb_ter.checked == true && cb_quar2.checked == true && cb_seg3.checked == true) {
+            div_resposta.innerHTML = `Seu estilo é Tinta Branca!`;
+            div_estilos.innerHTML = `Saiba mais sobre os estilos de tatuagem <a href="estilos.html" style = "color: #e02727">aqui</a>`;
+            div_estilos.style = "display: block;  color: white; font-size: 18px; font-family: 'Roboto', sans-serif; text-align: center;"
+        }
+
+    }
+
+    {
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    }
+</script>
+
+<script src="funcoes.js"></script>

@@ -1,0 +1,6 @@
+database: bd_ink
+host: bd-siteind
+username: Cadu
+password: #Gf12345
+
+

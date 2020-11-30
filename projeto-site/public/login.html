@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <form id="form_login" method="post" onsubmit="return entrar()"></form>
+        <div class="textbox">
+            <img class="usericon" src="images/user2.png"></li>
+            <input type="text" placeholder="Nome de Usuário" name="" value="">
+        </div>
+
+        <div class="textbox">
+            <img class="usericon" src="images/lock.png"></li>
+            <input type="password" placeholder="Senha" name="" value="">
+        </div>
+
+        <input class="btn" type="button" name="" value="Login">
+        </form>
+
+        <ul class="nocad">
+            <li>Não possui cadastro?<a href="cadastro.html"> Cadastre-se</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    
+                    window.location.href = 'user.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+
+                });
+            }
+        });
+
+        return false;
+    }
+</script>
