@@ -13,18 +13,18 @@
     <div class="login-box">
         <h1>Login</h1>
 
-        <form id="form_login" method="post" onsubmit="return entrar()"></form>
+        <form id="form_login" method="post" onsubmit="return entrar()">
         <div class="textbox">
             <img class="usericon" src="images/user2.png"></li>
-            <input type="text" placeholder="Nome de Usuário" name="" value="">
+            <input type="text" placeholder="Nome de Usuário" name="login">
         </div>
 
         <div class="textbox">
             <img class="usericon" src="images/lock.png"></li>
-            <input type="password" placeholder="Senha" name="" value="">
+            <input type="password" placeholder="Senha" name="senha">
         </div>
 
-        <input class="btn" type="button" name="" value="Login">
+        <input class="btn" type="submit" value="Login">
         </form>
 
         <ul class="nocad">
@@ -50,6 +50,8 @@
                     sessionStorage.nome_usuario_meuapp = json.nome;
                     
                     window.location.href = 'user.html';
+
+                    alert("Logado com Sucesso!")
                 });
 
             } else {
